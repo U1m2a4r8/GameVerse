@@ -1,0 +1,19 @@
+{
+  "name": "gameverse",
+  "version": "1.0.0",
+  "description": "Full-stack gaming platform built with the MERN stack, deployed on AWS.",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run start\" \"npm run client\""
+  },
+  "keywords": ["mern", "gaming", "aws", "devops"],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5"
+  }
+}
